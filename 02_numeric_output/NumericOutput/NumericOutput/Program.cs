@@ -12,8 +12,13 @@ namespace NumericOutput
             // do math in console
             Console.WriteLine(1 + 1);
 
-            // console readline
-            Console.ReadLine();
+            // do more math in console,
+            // parenthesis priority
+            Console.WriteLine(1 + 2 * 3);
+            Console.WriteLine((1 + 2) * 3);
+
+            //// console readline
+            //Console.ReadLine();
         }
     }
 }
