@@ -22,7 +22,8 @@ namespace UsingVariables
 
             int sumOfNumbers = firstNumber + secondNumber;
             int newSum = sumOfNumbers;
-      
+
+          
 
             Console.WriteLine($"message {message}");
             Console.WriteLine($"anotherMessage {anotherMessage}");
@@ -39,6 +40,21 @@ namespace UsingVariables
             Console.WriteLine(sumOfNumbers);
             Console.WriteLine(newSum);
 
+            double piApp = 3.14;
+            double piBuiltIn = Math.PI;
+
+            Console.WriteLine(piApp);
+            Console.WriteLine(piBuiltIn);
+
+
+            bool isTrue = true;
+            bool isFalse = false;
+            bool negateTrue = !true;
+      
+
+            Console.WriteLine(isTrue);
+            Console.WriteLine(isFalse);
+            Console.WriteLine(negateTrue);
         }
     }
 }
