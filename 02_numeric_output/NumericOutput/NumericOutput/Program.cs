@@ -6,7 +6,14 @@ namespace NumericOutput
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // output line to user
+            Console.WriteLine(42);
+
+            // do math in console
+            Console.WriteLine(1 + 1);
+
+            // console readline
+            Console.ReadLine();
         }
     }
 }
