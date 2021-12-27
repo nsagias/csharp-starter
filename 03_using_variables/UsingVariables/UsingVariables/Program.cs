@@ -15,7 +15,13 @@ namespace UsingVariables
             int number = -12;
 
             int sum = 1 + 1;
-           
+
+
+            int firstNumber = 42;
+            int secondNumber = 11;
+
+            int sumOfNumbers = firstNumber + secondNumber;
+            int newSum = sumOfNumbers;
       
 
             Console.WriteLine($"message {message}");
@@ -29,6 +35,10 @@ namespace UsingVariables
             ====================================
             one and one is: " + sum
             );
+            
+            Console.WriteLine(sumOfNumbers);
+            Console.WriteLine(newSum);
+
         }
     }
 }
