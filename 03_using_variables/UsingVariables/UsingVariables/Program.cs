@@ -14,6 +14,13 @@ namespace UsingVariables
 
             int number = -12;
 
+            int sum = 1 + 1;
+            Console.WriteLine(
+                @"Show result with at sybol printout
+====================================
+one and one is: " + sum
+            );
+      
 
             Console.WriteLine($"message {message}");
             Console.WriteLine($"anotherMessage {anotherMessage}");
