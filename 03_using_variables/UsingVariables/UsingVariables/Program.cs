@@ -7,15 +7,22 @@ namespace UsingVariables
         public static void Main(string[] args)
         {
             string message;
-
             message = "any message will do";
 
-            string anotherMesage;
+            string anotherMessage;
+            anotherMessage = "another any message will do";
 
-            anotherMesage = "another any message will do";
+            int number = -12;
 
-            Console.WriteLine(message);
-            Console.WriteLine(anotherMesage);
+
+            Console.WriteLine($"message {message}");
+            Console.WriteLine($"anotherMessage {anotherMessage}");
+
+            Console.WriteLine("number " + number);
+            Console.WriteLine($"number {number}");
+
+
+
         }
     }
 }
