@@ -6,7 +6,16 @@ namespace UsingVariables
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string message;
+
+            message = "any message will do";
+
+            string anotherMesage;
+
+            anotherMesage = "another any message will do";
+
+            Console.WriteLine(message);
+            Console.WriteLine(anotherMesage);
         }
     }
 }
