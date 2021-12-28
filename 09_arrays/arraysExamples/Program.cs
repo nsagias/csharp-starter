@@ -10,7 +10,7 @@ namespace arraysExamples
           string[] cars = {"Porche", "Lambo", "Jag", "Tesla"};
 
           // array of numbers
-          int[] myNums = {10, 20, 30, 40};
+          int[] myNums = {10, 40, 30, 20};
 
           // print first element in array
           Console.WriteLine(cars[0]);
@@ -40,6 +40,12 @@ namespace arraysExamples
           foreach (string car in cars) 
           {
             Console.WriteLine(car);
+          }
+
+          Array.Sort(myNums);
+          foreach (int i in myNums) 
+          {
+            Console.WriteLine(i);
           }
         }
     }
