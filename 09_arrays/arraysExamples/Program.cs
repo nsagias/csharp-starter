@@ -11,6 +11,16 @@ namespace arraysExamples
 
           // array of numbers
           int[] myNums = {10, 20, 30, 40};
+
+          // print first element in array
+          Console.WriteLine(cars[0]);
+
+          // change value of first element and print
+          cars[0] = "Ferrari";
+          Console.WriteLine(cars[0]);
+
+          // print length of array
+          Console.WriteLine(cars.Length);
         }
     }
 }
