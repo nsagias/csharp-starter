@@ -49,7 +49,12 @@ namespace arraysExamples
             Console.WriteLine(i);
           }
 
+
           Console.WriteLine(myNums.Max());
+          Console.WriteLine(myNums.Min());
+          Console.WriteLine(myNums.Sum());
+
+
         }
     }
 }
