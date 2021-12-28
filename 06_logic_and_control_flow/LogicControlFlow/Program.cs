@@ -19,8 +19,10 @@ namespace LogicControlFlow
         string isBingo = LULZ;
 
         // ternary operator variable
-
         string result;
+        int num3 = 3;
+        int num4 = 4;
+
 
         // Logic Operators ( <, >, ==, >=, <=, != )
         if (num1 < num2) 
@@ -50,12 +52,14 @@ namespace LogicControlFlow
           case "NOT_BINGO":
             Console.WriteLine(NOT_BINGO);
             break;
+
           default:
             Console.WriteLine(SOMEONE_ELSE_WON);
             break;
         }
 
         
+        result = () ? : ;
 
 
       }
