@@ -6,8 +6,11 @@ namespace LogicControlFlow
   {
       static void Main(string[] args)
       {
+
         int num1 = 1;
         int num2 = 2;
+
+        // Logic Operators ( <, >, ==, >=, <=, != )
         if (num1 < num2) 
         {
           Console.WriteLine("num1 is less than num2");
