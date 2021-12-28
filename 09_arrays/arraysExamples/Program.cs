@@ -33,6 +33,14 @@ namespace arraysExamples
           {
             Console.WriteLine(car);
           }
+
+
+          // Sort the use foreach
+          Array.Sort(cars);
+          foreach (string car in cars) 
+          {
+            Console.WriteLine(car);
+          }
         }
     }
 }
