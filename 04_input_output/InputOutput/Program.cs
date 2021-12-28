@@ -6,7 +6,13 @@ namespace InputOutput
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name;
+
+            Console.WriteLine("Enter Your Name: ");
+            name = Console.ReadLine();
+
+            Console.Write("Your name is: ");
+            Console.WriteLine(name);
         }
     }
 }
