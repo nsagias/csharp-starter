@@ -6,7 +6,13 @@ namespace WhileAndDoWhile
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int num = 0;
+            int numLoopLimit = 5;
+            while (num <= numLoopLimit)
+            {
+              Console.WriteLine(num);
+              num++;
+            }
         }
     }
 }
