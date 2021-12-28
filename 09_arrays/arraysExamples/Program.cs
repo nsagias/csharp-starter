@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace arraysExamples
 {
@@ -47,6 +48,8 @@ namespace arraysExamples
           {
             Console.WriteLine(i);
           }
+
+          Console.WriteLine(myNums.Max());
         }
     }
 }
