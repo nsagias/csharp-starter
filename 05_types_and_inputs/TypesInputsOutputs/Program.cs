@@ -29,9 +29,13 @@ namespace TypesInputsOutputs
 
           Console.Write("Are you fun? (true or false): ");
           fun = Convert.ToBoolean(Console.ReadLine());
-          
+
           Console.Write("Do you work hard? (Y or N): ");
           worksHard = Convert.ToChar(Console.ReadLine());
+
+          // Create console output
+
+          Console.WriteLine($"This is my console profile my name is {name} my age {age} I make this much {salary} it is true I am {fun}  do I work hard {worksHard}");
 
         }
     }
