@@ -23,16 +23,29 @@ namespace ForLoops
             Console.WriteLine(i);
           }
 
+          int breakLoop = 3;
           // break out of look example
           for (int i = 0; i < 10; i++) 
           {
-            if (i == 3) 
+            if (i == breakLoop) 
             {
-              Console.WriteLine("breaking out");
+              Console.WriteLine($"breaking out at {breakLoop}");
               break;
             }
             Console.WriteLine(i);
           }
+
+          int skipNumber = 5;
+          for (int i = 0; i < 10; i++) 
+          {
+            if (i == skipNumber) 
+            {
+              Console.WriteLine($"skipping {skipNumber}");
+              continue;
+            }
+            Console.WriteLine(i);
+          }
+
 
 
            
