@@ -22,6 +22,19 @@ namespace ForLoops
           {
             Console.WriteLine(i);
           }
+
+          // break out of look example
+          for (int i = 0; i < 10; i++) 
+          {
+            if (i == 3) 
+            {
+              Console.WriteLine("breaking out");
+              break;
+            }
+            Console.WriteLine(i);
+          }
+
+
            
           // Create a array of strings
           // use foreach to loop through array
