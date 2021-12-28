@@ -43,7 +43,14 @@ namespace WhileAndDoWhile
             Console.WriteLine("--------------------------------");
             Console.WriteLine("--------------------------------");
 
-          
+            do {
+              Console.WriteLine(num4);
+              num4--;
+            }
+            while (num4 >= numLowerLimit);
+
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("------------ END ---------------");
         }
     }
 }
