@@ -16,9 +16,13 @@ namespace LogicControlFlow
         {
           Console.WriteLine("num1 is less than num2");
         }
+        else if (num1 == num2) 
+        {
+          Console.WriteLine("there are the same");
+        }
         else 
         {
-          Console.WriteLine("they might be eqaul");
+          Console.WriteLine("somethings smells");
         }
 
       }
