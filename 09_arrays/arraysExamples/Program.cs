@@ -54,6 +54,12 @@ namespace arraysExamples
           Console.WriteLine(myNums.Min());
           Console.WriteLine(myNums.Sum());
 
+          // declaring arrays
+          string[] cars2 = new string[4];
+          string[] cars3 = new string[4] {"Porche", "Lambo", "Jag", "Tesla"};
+          string[] cars3 = new string[]{"Porche", "Lambo", "Jag", "Tesla"};
+          string[] cars3 = {"Porche", "Lambo", "Jag", "Tesla"};
+
 
         }
     }
