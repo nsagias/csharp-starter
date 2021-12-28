@@ -15,8 +15,14 @@ namespace TypesInputsOutputs
           string name;
           int age;
           double salary;
-          
-        
+          bool fun;
+          bool worksHard;
+
+          Console.Write("Enter your name: ");
+          Console.Write("Enter your age: ");
+          Console.Write("Enter your: salary");
+          Console.Write("Are you fun?: ");
+          Console.Write("Do you work hard?: ");
 
         }
     }
