@@ -27,6 +27,12 @@ namespace arraysExamples
           {
             Console.WriteLine(cars[i]);
           }
+
+          // use foreach to loop through each element 
+          foreach (string car in cars) 
+          {
+            Console.WriteLine(car);
+          }
         }
     }
 }
