@@ -20,12 +20,16 @@ namespace TypesInputsOutputs
 
           Console.Write("Enter your name: ");
           name = Console.ReadLine();
+
           Console.Write("Enter your age: ");
           age = Convert.ToInt32(Console.ReadLine());
+
           Console.Write("Enter your salary: ");
           salary = Convert.ToDouble(Console.ReadLine());
+
           Console.Write("Are you fun? (true or false): ");
           fun = Convert.ToBoolean(Console.ReadLine());
+          
           Console.Write("Do you work hard? (Y or N): ");
           worksHard = Convert.ToChar(Console.ReadLine());
 
