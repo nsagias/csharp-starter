@@ -21,6 +21,12 @@ namespace arraysExamples
 
           // print length of array
           Console.WriteLine(cars.Length);
+
+          // loop through array using car.length value
+          for (int i = 0; i < cars.Length; i++) 
+          {
+            Console.WriteLine(cars[i]);
+          }
         }
     }
 }
