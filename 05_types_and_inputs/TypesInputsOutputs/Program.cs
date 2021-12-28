@@ -6,7 +6,11 @@ namespace TypesInputsOutputs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           // Plan create prompts from yours
+           // Obtain data and convet types
+           // Console.log types
+
+           // name age salary
         }
     }
 }
