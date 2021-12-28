@@ -6,15 +6,18 @@ namespace TypesInputsOutputs
     {
         static void Main(string[] args)
         {
-           // Plan create prompts from yours
-           // Obtain data and convet types
-           // Console.log types
+          // Plan create prompts from yours
+          // Obtain data and convet types
+          // Console.log types
 
-           // name age salary
-           string name;
-           int age;
-           double salary;
-           
+          // name age salary
+          // add boolean
+          string name;
+          int age;
+          double salary;
+          
+        
+
         }
     }
 }
