@@ -11,6 +11,10 @@ namespace TypesInputsOutputs
            // Console.log types
 
            // name age salary
+           string name;
+           int age;
+           double salary;
+           
         }
     }
 }
