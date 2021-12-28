@@ -16,6 +16,12 @@ namespace ForLoops
           {
             Console.WriteLine(i);
           }
+          
+          // decrement 
+          for (int i = 10;  i > 0; i--) 
+          {
+            Console.WriteLine(i);
+          }
            
           // Create a array of strings
           // use foreach to loop through array
