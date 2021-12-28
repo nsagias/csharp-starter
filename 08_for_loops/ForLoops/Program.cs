@@ -16,6 +16,14 @@ namespace ForLoops
           {
             Console.WriteLine(i);
           }
+           
+          // Create a array of strings
+          // use foreach to loop through array
+          string[]  cars = {"Ferrari", "Lambo", "Fiat", "Zoom"};
+          foreach(string car in cars)
+          {
+            Console.WriteLine(car);
+          }
 
         }
 
