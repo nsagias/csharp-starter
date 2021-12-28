@@ -10,6 +10,12 @@ namespace LogicControlFlow
         int num1 = 1;
         int num2 = 2;
 
+        string BINGO = "BINGO";
+        string NOT_BINGO = "NOT_BINGO";
+        string SOMEONE_ELSE_WON = "SOMEONE_ELSE_WON";
+        string LULZ = "LULZ";
+        string isBingo = LULZ;
+
         // Logic Operators ( <, >, ==, >=, <=, != )
         if (num1 < num2) 
         {
@@ -27,6 +33,22 @@ namespace LogicControlFlow
         {
           Console.WriteLine("somethings smells");
         }
+
+        // Switch statement
+        switch(isBingo) 
+        {
+          case "BINGO":
+            Console.WriteLine(BINGO);
+            break;
+
+          case "NOT_BINGO":
+            Console.WriteLine(NOT_BINGO);
+            break;
+          default:
+            Console.WriteLine(SOMEONE_ELSE_WON);
+            break;
+        }
+
 
       }
   }
