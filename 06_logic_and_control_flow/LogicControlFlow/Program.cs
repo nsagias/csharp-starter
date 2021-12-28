@@ -59,7 +59,11 @@ namespace LogicControlFlow
         }
 
         
-        result = () ? : ;
+        result = (num3 < num4) ? 
+          $"{num3} is lower than {num4}" 
+          : $"{num4} is lower than {num3}";
+
+        Console.WriteLine(result);
 
 
       }
