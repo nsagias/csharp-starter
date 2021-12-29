@@ -15,7 +15,24 @@ namespace methods {
     static void ReturnFunction() {
       Console.WriteLine( ReturnNumber1() );
     }
+
+    // passing function as param
     
+    public static int Method1(string input) {
+       return 0;
+    }
+    
+    public static bool FunctionThatRunsTheMethod (Func<string, int> varMethodName) {
+      int i = varMethodName("string");
+      return true;
+    }
+
+    public static bool CallTheMethod() {
+      return FunctionThatRunsTheMethod(Method2);
+    }
+    
+
+
     static void Main(string[] args) {
       PrintName();
       LamdaPrintName();
@@ -23,6 +40,7 @@ namespace methods {
       PrintText("Hello from", "Nick");
       LamdaReturnFunction();
       ReturnFunction();
+      CallTheMethod();
 
     }
   }
