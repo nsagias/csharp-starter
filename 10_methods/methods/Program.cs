@@ -12,6 +12,9 @@ namespace methods {
     static int ReturnNumber1() =>  1;
 
     static void LamdaReturnFunction() => Console.WriteLine(ReturnNumber1());
+    static void ReturnFunction() {
+      Console.WriteLine( ReturnNumber1() );
+    }
     
     static void Main(string[] args) {
       PrintName();
@@ -19,6 +22,7 @@ namespace methods {
       PrintNumber(1);
       PrintText("Hello from", "Nick");
       LamdaReturnFunction();
+      ReturnFunction();
 
     }
   }
