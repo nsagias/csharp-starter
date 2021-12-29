@@ -82,11 +82,13 @@ namespace arraysExamples
           // notes only use double quotes in code
           string setence2 = setence.Replace(",", "");
           Console.WriteLine(setence2); // prints System.String[]
-          string[] wordsFromSentence = setence2.Split(" ");
-          Console.WriteLine(wordsFromSentence);
-          foreach ( string word in wordsFromSentence) {
+          string[] wordsFromSentenceList = setence2.Split(" ");
+          Console.WriteLine(wordsFromSentenceList);
+          foreach ( string word in wordsFromSentenceList) {
             Console.WriteLine(word);
           }       
+          Console.WriteLine($"first item in numList {numList[0]}");
+          Console.WriteLine($"frist item in wordsFromSetenceList {wordsFromSentenceList[0]}");
 
         }
     }
