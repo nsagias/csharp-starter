@@ -18,17 +18,17 @@ namespace TypesInputsOutputs
           bool fun;
           char worksHard;
           
-          string firstName = "Nick";
-          string firstName2 = "Nick";
-          string lastName = "NotNick";
-          // returns -1 or 0
-          int result = string.Compare(firstName, lastName); // length compare
-          int result2 = string.Compare(firstName, firstName); // length compare
-          Console.WriteLine(result);
-          Console.WriteLine(result);
+          // string firstName = "Nick";
+          // string firstName2 = "Nick";
+          // string lastName = "NotNick";
+          // // returns -1 or 0
+          // int result = string.Compare(firstName, lastName); // length compare
+          // int result2 = string.Compare(firstName, firstName); // length compare
+          // Console.WriteLine(result);
+          // Console.WriteLine(result);
           
-          Console.WriteLine(firstName.Length); // get firstname length
-          Console.WriteLine(firstName == firstName2); // return true or false 
+          // Console.WriteLine(firstName.Length); // get firstname length
+          // Console.WriteLine(firstName == firstName2); // return true or false 
 
           try {
             Console.Write("Enter your name: ");
@@ -49,10 +49,11 @@ namespace TypesInputsOutputs
           // Create console output
 
            Console.WriteLine($"This is my console profile my name is {name} my age {age} I make this much {salary} it is true I am {fun}  do I work hard {worksHard}");
-          } catch  {
-            Console.WriteLine("Error: Something went wrong");
+          } catch  (Exception e) {
+            Console.WriteLine($"Error: Something went wrong {e}");
+          } finally {
+            Console.WriteLine("finally....");
           }
-
 
         }
     }
