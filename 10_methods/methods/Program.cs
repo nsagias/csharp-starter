@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace methods
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+namespace methods {
+  class Program {
+    void PrintName() {
+
     }
+    static void Main(string[] args) {
+        Console.WriteLine("Hello World!");
+    }
+  }
 }
