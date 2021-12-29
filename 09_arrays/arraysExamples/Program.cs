@@ -90,6 +90,20 @@ namespace arraysExamples
           Console.WriteLine($"first item in numList {numList[0]}");
           Console.WriteLine($"frist item in wordsFromSetenceList {wordsFromSentenceList[0]}");
 
+          //Fizz Buzz
+          foreach( int num in numList) {
+            if( num == 1 ) {
+              Console.WriteLine($"Numbers is {num} and cannot be any");
+            }
+            if( num % 2 == 0) {
+              Console.WriteLine($"Fizz {num}");
+            }
+            if( num % 3 == 0) {
+              Console.WriteLine($"Buzz {num}");
+            }
+          }
+          
+
         }
     }
 }
