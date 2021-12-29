@@ -76,15 +76,17 @@ namespace arraysExamples
           foreach( int num in numList) {
             Console.WriteLine(num);
           }
-           
-          string setence = "I love salsa, mambo, and bachata";
           
-          string[] wordsFromSentence = setence.Split(' ');
-          // List<string> wordList = new List<string>() {wordsFromSentence};
-
-          // foreach ( string word in wordList) {
-          //   Console.WriteLine(word);
-          // }
+    
+          string setence = "I love salsa, mambo, and bachata";
+          // notes only use double quotes in code
+          string setence2 = setence.Replace(",", "");
+          Console.WriteLine(setence2); // prints System.String[]
+          string[] wordsFromSentence = setence2.Split(" ");
+          Console.WriteLine(wordsFromSentence);
+          foreach ( string word in wordsFromSentence) {
+            Console.WriteLine(word);
+          }       
 
         }
     }
