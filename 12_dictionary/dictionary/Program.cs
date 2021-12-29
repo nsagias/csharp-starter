@@ -40,6 +40,19 @@ namespace dictionary
         {
             Console.WriteLine($"Student {index} is {students2[index].FirstName} {students2[index].LastName}");
         }
+
+
+          var myArray = new[] {
+            new {name = "nick", favouriteColor = "blue"},
+            new {name = "dingo", favouriteColor = "any"},
+          };
+          var apple = new { item = "apples"};
+
+          Console.WriteLine($"myArray: {myArray}");
+          Console.WriteLine($"myArray: {apple.item}");
+
         }
+
+        
     }
 }
