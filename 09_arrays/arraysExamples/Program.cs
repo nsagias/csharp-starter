@@ -57,10 +57,17 @@ namespace arraysExamples
           // declaring arrays
           string[] cars2 = new string[4];
           string[] cars3 = new string[4] {"Porche", "Lambo", "Jag", "Tesla"};
-          string[] cars3 = new string[]{"Porche", "Lambo", "Jag", "Tesla"};
-          string[] cars3 = {"Porche", "Lambo", "Jag", "Tesla"};
+          string[] cars4 = new string[]{"Porche", "Lambo", "Jag", "Tesla"};
+          string[] cars5 = {"Porche", "Lambo", "Jag", "Tesla"};
 
+          var myArray = new[] {
+            new {name = "nick", favouriteColor = "blue"},
+            new {name = "dingo", favouriteColor = "any"},
+          };
+          var apple = new { item = "apples"};
 
+          Console.WriteLine($"myArray: {myArray}");
+          Console.WriteLine($"myArray: {apple.item}");
         }
     }
 }
