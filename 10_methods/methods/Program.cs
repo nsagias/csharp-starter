@@ -28,7 +28,14 @@ namespace methods {
     }
 
     public static bool CallTheMethod() {
-      return FunctionThatRunsTheMethod(Method2);
+      return FunctionThatRunsTheMethod(Method1);
+    }
+    static void PassMeFunction(string someText) {
+      Console.WriteLine($"{someText}");
+    }
+
+    static void PassMeAString(Action<string> PassMeFunction, string theText) {
+      PassMeFunction(theText);
     }
     
 
@@ -41,6 +48,7 @@ namespace methods {
       LamdaReturnFunction();
       ReturnFunction();
       CallTheMethod();
+      PassMeAString(PassMeFunction, "hi");
 
     }
   }
