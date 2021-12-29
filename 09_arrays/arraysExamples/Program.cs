@@ -36,7 +36,7 @@ namespace arraysExamples
             Console.WriteLine(car);
           }
 
-
+          Console.WriteLine("-----------------------------");
           // Sort the use foreach
           Array.Sort(cars);
           foreach (string car in cars) 
@@ -44,22 +44,27 @@ namespace arraysExamples
             Console.WriteLine(car);
           }
 
+
           Array.Sort(myNums);
           foreach (int i in myNums) 
           {
             Console.WriteLine(i);
           }
 
-
+         
           Console.WriteLine(myNums.Max());
           Console.WriteLine(myNums.Min());
           Console.WriteLine(myNums.Sum());
+
+          Console.WriteLine("-----------------------------");
 
           // declaring arrays
           string[] cars2 = new string[4];
           string[] cars3 = new string[4] {"Porche", "Lambo", "Jag", "Tesla"};
           string[] cars4 = new string[]{"Porche", "Lambo", "Jag", "Tesla"};
           string[] cars5 = {"Porche", "Lambo", "Jag", "Tesla"};
+
+          Console.WriteLine("-----------------------------");
 
           var myArray = new[] {
             new {name = "nick", favouriteColor = "blue"},
@@ -70,6 +75,7 @@ namespace arraysExamples
           Console.WriteLine($"myArray: {myArray}");
           Console.WriteLine($"myArray: {apple.item}");
 
+         Console.WriteLine("-----------------------------");
 
           List<int> numList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
 
@@ -77,13 +83,16 @@ namespace arraysExamples
             Console.WriteLine(num);
           }
           
-    
           string setence = "I love salsa, mambo, and bachata";
           // notes only use double quotes in code
           string setence2 = setence.Replace(",", "");
+
           Console.WriteLine(setence2); // prints System.String[]
+
           string[] wordsFromSentenceList = setence2.Split(" ");
+
           Console.WriteLine(wordsFromSentenceList);
+          
           foreach ( string word in wordsFromSentenceList) {
             Console.WriteLine(word);
           }       
