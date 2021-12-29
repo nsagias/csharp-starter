@@ -2,11 +2,11 @@
 
 namespace methods {
   class Program {
-    void PrintName() {
-
+    static void PrintName() {
+      Console.WriteLine("Hello World!");
     }
     static void Main(string[] args) {
-        Console.WriteLine("Hello World!");
+      PrintName();
     }
   }
 }
