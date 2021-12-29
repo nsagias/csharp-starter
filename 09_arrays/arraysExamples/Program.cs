@@ -90,17 +90,22 @@ namespace arraysExamples
           Console.WriteLine($"first item in numList {numList[0]}");
           Console.WriteLine($"frist item in wordsFromSetenceList {wordsFromSentenceList[0]}");
 
+          Console.WriteLine("-----------------------------");
+
           //Fizz Buzz
           foreach( int num in numList) {
             if( num == 1 ) {
-              Console.WriteLine($"Numbers is {num} and cannot be any");
+              Console.WriteLine("Numbers is 1");
             }
-            if( num % 2 == 0) {
+            if((num % 2 == 0) && (num % 3 == 0)){
+              Console.WriteLine($"FizzBuzz {num}");
+            } else if( num % 2 == 0) {
               Console.WriteLine($"Fizz {num}");
-            }
-            if( num % 3 == 0) {
+            } else if( num % 3 == 0) {
               Console.WriteLine($"Buzz {num}");
-            }
+            } else { 
+              Console.WriteLine($"Numbers is {num} and cannot be any");
+            } 
           }
           
 
