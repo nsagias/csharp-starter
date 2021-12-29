@@ -50,7 +50,7 @@ namespace TypesInputsOutputs
 
            Console.WriteLine($"This is my console profile my name is {name} my age {age} I make this much {salary} it is true I am {fun}  do I work hard {worksHard}");
           } catch  (Exception e) {
-            Console.WriteLine($"Error: Something went wrong {e}");
+            Console.WriteLine($"Error: Something went wrong {e.Message}");
           } finally {
             Console.WriteLine("finally....");
           }
