@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace arraysExamples
 {
@@ -68,6 +69,23 @@ namespace arraysExamples
 
           Console.WriteLine($"myArray: {myArray}");
           Console.WriteLine($"myArray: {apple.item}");
+
+
+          List<int> numList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+
+          foreach( int num in numList) {
+            Console.WriteLine(num);
+          }
+           
+          string setence = "I love salsa, mambo, and bachata";
+          
+          string[] wordsFromSentence = setence.Split(' ');
+          // List<string> wordList = new List<string>() {wordsFromSentence};
+
+          // foreach ( string word in wordList) {
+          //   Console.WriteLine(word);
+          // }
+
         }
     }
 }
