@@ -34,8 +34,8 @@ namespace methods {
       Console.WriteLine($"{someText}");
     }
 
-    static void PassMeAString(Action<string> PassMeFunction, string theText) {
-      PassMeFunction(theText);
+    static void PassMeAString(Action<string> CallBack, string theText) {
+      CallBack(theText);
     }
     
 
