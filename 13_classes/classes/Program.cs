@@ -14,6 +14,7 @@ namespace classes
         
         try {
           Console.WriteLine($"{box.Length}, {box.Height}, {box.Width}");
+          Console.WriteLine($"Box volume {volume}");
         } 
         catch (Exception e) {
           Console.WriteLine(e.Message);
@@ -25,14 +26,4 @@ namespace classes
       }
     }
 
-    public class Box {
-      // this is also a data type
-      public double Length {get; set;}
-      public double Width { get; set; }
-      public double Height { get; set; }
-
-      public double getVolume() {
-        return Length * Width * Height;
-      }
-    }
 }
