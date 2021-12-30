@@ -5,7 +5,9 @@ namespace classes
     class Program
     {
         static void Main(string[] args) {
+          int num = 0;
 
+          Box box = new Box();
         }
     }
 
