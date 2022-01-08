@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic; 
 
-IEnumerable<string> FindFiles(string folderName) {
+IEnumerable<string> FindFiles(string folderName, string fileExtension) {
   List<string> salesFiles = new List<string>();
 
   var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
@@ -11,7 +11,10 @@ IEnumerable<string> FindFiles(string folderName) {
     //   salesFiles.Add(file);
     // }
     var extension = Path.GetExtension(file);
-    if (extension == ".json") {
+    // if (extension == ".json") {
+    //   salesFiles.Add(file);
+    // }
+    if (extension == fileExtension) {
       salesFiles.Add(file);
     }
   }
@@ -56,7 +59,9 @@ Console.WriteLine(currentDirectory);
 var storesDirectory = Path.Combine(currentDirectory, "stores");
 Console.WriteLine(storesDirectory);
 
-var salesFiles = FindFiles(storesDirectory);
+var fileExtension = ".json";
+
+var salesFiles = FindFiles(storesDirectory, fileExtension);
 
 
 foreach (var file in salesFiles) {
