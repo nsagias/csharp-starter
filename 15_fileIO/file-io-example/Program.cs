@@ -20,5 +20,15 @@ foreach (var file in salesFiles) {
   Console.WriteLine(file);
 }
 
+// get root 
 string documentPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 Console.WriteLine(documentPath);
+
+// directory notation
+Console.WriteLine($"stores{Path.DirectorySeparatorChar}201");
+
+// Combine to form path
+Console.WriteLine(Path.Combine("stores","201")); 
+
+// get filename extension
+Console.WriteLine(Path.GetExtension("sales.json"));
