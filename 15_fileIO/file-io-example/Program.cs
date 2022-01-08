@@ -8,13 +8,16 @@ var currentDirectory = Directory.GetCurrentDirectory();
 var storesDirectory = Path.Combine(currentDirectory, "stores");
 
 var createNewDirectoryName = "salesTotalDirectory";
+var createNewFileName = "totals.txt";
+var fileExtension = ".json";
+
 var salesTotalDirectory = Path.Combine(currentDirectory, createNewDirectoryName  );
 
 Directory.CreateDirectory(salesTotalDirectory);
 
-var fileExtension = ".json";
 var salesFiles = FindFiles(storesDirectory, fileExtension);
 
+File.WriteAllText(Path.Combine(salesTotalDirectory, createNewFileName), String.Empty);
 
 
 
