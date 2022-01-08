@@ -19,3 +19,6 @@ var salesFiles = FindFiles("stores");
 foreach (var file in salesFiles) {
   Console.WriteLine(file);
 }
+
+string documentPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+Console.WriteLine(documentPath);
