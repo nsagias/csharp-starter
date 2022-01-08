@@ -71,3 +71,9 @@ foreach (var file in salesFiles) {
 
 // creating new directories
 Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores", "201", "newMadeDir"));
+
+// check if diretory exists  reuse current directory
+// var currentDirectory = Directory.GetCurrentDirectory();
+var filePath = Path.Combine(currentDirectory, "stores", "201","newMadeDir");
+bool directoryExists = Directory.Exists(filePath);
+Console.WriteLine($"Return boolean {directoryExists}");
