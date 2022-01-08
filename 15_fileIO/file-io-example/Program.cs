@@ -67,3 +67,7 @@ var salesFiles = FindFiles(storesDirectory, fileExtension);
 foreach (var file in salesFiles) {
   Console.WriteLine(file);
 }
+
+
+// creating new directories
+Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores", "201", "newMadeDir"));
