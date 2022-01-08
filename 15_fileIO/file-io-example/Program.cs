@@ -13,3 +13,9 @@ IEnumerable<string> FindFiles(string folderName) {
   }
   return salesFiles;
 }
+
+var salesFiles = FindFiles("stores");
+
+foreach (var file in salesFiles) {
+  Console.WriteLine(file);
+}
