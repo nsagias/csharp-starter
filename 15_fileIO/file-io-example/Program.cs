@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.Encodings;
 using System.Collections.Generic; 
 
 IEnumerable<string> FindFiles(string folderName, string fileExtension) {
@@ -77,3 +78,8 @@ Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores"
 var filePath = Path.Combine(currentDirectory, "stores", "201","newMadeDir");
 bool directoryExists = Directory.Exists(filePath);
 Console.WriteLine($"Return boolean {directoryExists}");
+
+// create new file and add text to the file
+// reuse filePath
+// must use pathcombine
+File.WriteAllText(Path.Combine(filePath, "Hello.txt"), "Hello World Nick!");
