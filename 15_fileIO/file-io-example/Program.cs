@@ -40,4 +40,12 @@ string fileName = $"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparat
 
 FileInfo info = new FileInfo(fileName);
 
-Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}"); // And many more
+Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}");
+
+// get current directory
+var currentDirectory = Directory.GetCurrentDirectory();
+Console.WriteLine(currentDirectory);
+
+// use current directory and add stores to path
+var storesDirectory = Path.Combine(currentDirectory, "stores");
+Console.WriteLine(storesDirectory);
