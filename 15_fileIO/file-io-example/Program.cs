@@ -7,18 +7,24 @@ IEnumerable<string> FindFiles(string folderName) {
   var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
   
   foreach (var file in foundFiles) {
-    if (file.EndsWith("sales.json")) {
+    // if (file.EndsWith("sales.json")) {
+    //   salesFiles.Add(file);
+    // }
+    var extension = Path.GetExtension(file);
+    if (extension == ".json") {
       salesFiles.Add(file);
     }
   }
   return salesFiles;
 }
 
-var salesFiles = FindFiles("stores");
+// var salesFiles = FindFiles("stores");
 
-foreach (var file in salesFiles) {
-  Console.WriteLine(file);
-}
+
+
+// foreach (var file in salesFiles) {
+//   Console.WriteLine(file);
+// }
 
 // get root 
 string documentPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -49,3 +55,10 @@ Console.WriteLine(currentDirectory);
 // use current directory and add stores to path
 var storesDirectory = Path.Combine(currentDirectory, "stores");
 Console.WriteLine(storesDirectory);
+
+var salesFiles = FindFiles(storesDirectory);
+
+
+foreach (var file in salesFiles) {
+  Console.WriteLine(file);
+}
