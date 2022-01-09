@@ -43,7 +43,15 @@ foreach (var file in salesFiles) {
 }
 double CalculateSalestotal(IEnumerable<string> salesFiles) {
   double salesTotal = 0;
-  
+
+  foreach (var file in salesFiles) {
+    string salesJson = File.ReadAllText(file);
+
+    SalesData? data = JsonConvert.DeserializeObject<SalesData>(salesJson);
+
+    salesTotal += data?.Total ?? 0;
+  }
+
   return salesTotal;
 }
 record SalesData (double Total);
