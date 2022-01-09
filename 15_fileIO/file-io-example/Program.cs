@@ -7,9 +7,10 @@ var currentDirectory = Directory.GetCurrentDirectory();
 var storesDirectory = Path.Combine(currentDirectory, "stores");
 
 var createNewDirectoryName = "salesTotalDirectory";
-var createNewFileName = "totals.txt";
+// var createNewFileName = "totals.txt";
 // var createNewFileContent =  String.Empty;
-var createNewFileContent =  "Nick was here";
+// var createNewFileContent =  "Nick was here";
+
 
 
 var salesTotalDirectory = Path.Combine(currentDirectory, createNewDirectoryName  );
@@ -19,7 +20,13 @@ Directory.CreateDirectory(salesTotalDirectory);
 var fileExtension = ".json";
 var salesFiles = FindFiles(storesDirectory, fileExtension);
 
-File.WriteAllText(Path.Combine(salesTotalDirectory, createNewFileName), createNewFileContent );
+// File.WriteAllText(Path.Combine(salesTotalDirectory, createNewFileName), createNewFileContent );
+
+var salesTotal = CalculateSalesTotal(salesFiles);
+var updateExistingFileName = "totals.txt";
+var updateExistingFileContent = $"{salesTotal}{Environment.NewLine}";
+File.AppendAllText(
+    Path.Combine(salesTotalDirectory, updateExistingFileName), updateExistingFileContent);
 
 
 
@@ -41,7 +48,10 @@ IEnumerable<string> FindFiles(string folderName, string fileExtension) {
 foreach (var file in salesFiles) {
   Console.WriteLine(file);
 }
-double CalculateSalestotal(IEnumerable<string> salesFiles) {
+
+
+
+double CalculateSalesTotal(IEnumerable<string> salesFiles) {
   double salesTotal = 0;
 
   foreach (var file in salesFiles) {
